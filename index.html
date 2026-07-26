@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dayspan — Days Since & Until</title>
+<style>
+:root{--bg:#F6F5F1;--ink:#1D1C19;--warm:#E8956B;--cool:#6FA1E8}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0E12;--ink:#F2F1EC}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}
+main{max-width:560px;padding:48px 24px;text-align:center}
+.mark{display:inline-flex;align-items:center;gap:6px;margin-bottom:28px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--warm)}
+.line{width:36px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--warm),var(--cool))}
+.ring{width:10px;height:10px;border-radius:50%;border:3px solid var(--cool)}
+h1{font-size:32px;margin:0 0 12px;letter-spacing:-.02em}
+p{line-height:1.7;opacity:.75;font-size:16px}
+a{color:var(--cool);text-decoration:none}
+footer{margin-top:36px;font-size:13px;opacity:.55}
+</style>
+</head>
+<body>
+<main>
+<div class="mark"><span class="dot"></span><span class="line"></span><span class="ring"></span></div>
+<h1>Dayspan</h1>
+<p>A two-way day counter: every card shows how many days it has been — and how many days to go. No account, no ads, no tracking. Your days live only on your iPhone.</p>
+<p><a href="./privacy/">Privacy Policy</a> · <a href="https://github.com/iamadk/DaySpan/issues">Support</a></p>
+<footer>© 2026 Dayspan</footer>
+</main>
+</body>
+</html>
