@@ -1,31 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dayspan — Days Since & Until</title>
-<style>
-:root{--bg:#F6F5F1;--ink:#1D1C19;--warm:#E8956B;--cool:#6FA1E8}
-@media(prefers-color-scheme:dark){:root{--bg:#0D0E12;--ink:#F2F1EC}}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}
-main{max-width:560px;padding:48px 24px;text-align:center}
-.mark{display:inline-flex;align-items:center;gap:6px;margin-bottom:28px}
-.dot{width:10px;height:10px;border-radius:50%;background:var(--warm)}
-.line{width:36px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--warm),var(--cool))}
-.ring{width:10px;height:10px;border-radius:50%;border:3px solid var(--cool)}
-h1{font-size:32px;margin:0 0 12px;letter-spacing:-.02em}
-p{line-height:1.7;opacity:.75;font-size:16px}
-a{color:var(--cool);text-decoration:none}
-footer{margin-top:36px;font-size:13px;opacity:.55}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ed">
+  <title>Dayspan — A storybook for the dates you share</title>
+  <meta name="description" content="Count the days since you met. Ask what they remember, keep both answers on one page, and share a photo storybook PDF. See a real Dayspan sample.">
+  <link rel="canonical" href="https://dayspan.wgamecloud.com/">
+  <link rel="icon" href="/assets/dayspan-icon.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dayspan.wgamecloud.com/">
+  <meta property="og:title" content="Dayspan — One date. Two memories.">
+  <meta property="og:description" content="What do you each remember about your first date? See both memories on one storybook page.">
+  <meta property="og:image" content="https://dayspan.wgamecloud.com/assets/first-coffee-social.jpg">
+  <meta property="og:image:alt" content="A page from Dayspan’s storybook about a first coffee together, beside a café window.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/home.css">
 </head>
 <body>
-<main>
-<div class="mark"><span class="dot"></span><span class="line"></span><span class="ring"></span></div>
-<h1>Dayspan</h1>
-<p>A two-way day counter: every card shows how many days it has been — and how many days to go. No account, no ads, no tracking. Your days live only on your iPhone.</p>
-<p><a href="./privacy/">Privacy Policy</a> · <a href="./terms/">Terms</a> · <a href="./about/">About</a> · <a href="mailto:iamadk@gmail.com">Support</a></p>
-<footer>© 2026 Dayspan</footer>
-</main>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="shell masthead">
+    <a class="brand" href="/" aria-label="Dayspan home"><img src="/assets/dayspan-icon.png" alt="" width="34" height="34">Dayspan</a>
+    <nav aria-label="Main navigation">
+      <a href="#how">How it works</a>
+      <a class="sample-link" href="/assets/the-year-we-met.pdf">Sample PDF <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="shell hero" aria-labelledby="headline">
+      <div class="intro">
+        <p class="kicker">A storybook for the dates you share</p>
+        <h1 id="headline">One date.<br><em>Two memories.</em></h1>
+        <p class="lead">Count the days since you met. Ask what they remember, put both answers on one page, and send them a storybook PDF to keep.</p>
+        <div class="get">
+          <a class="download" href="https://apps.apple.com/us/app/dayspan-days-since-until/id6794791699"><img src="/assets/app-store.svg" width="150" height="50" alt="Download Dayspan on the App Store"></a>
+          <p>Your first two-perspective page is free.<br><span>Storybooks require Dayspan 1.4 or later.</span></p>
+        </div>
+      </div>
+
+      <figure class="sample" aria-labelledby="sample-caption">
+        <a class="scene" href="/assets/the-year-we-met.pdf" aria-label="Open The year we met, a two-page sample PDF" aria-describedby="memories">
+          <img class="cafe" src="/assets/coffee-table.webp" width="1200" height="800" alt="" fetchpriority="high">
+          <img id="memories" class="leaf" src="/assets/our-first-coffee.webp" width="881" height="1400" alt="Our first coffee. My memory: I ordered a second coffee so we could keep talking. Their memory: I had already missed my train. I wanted to stay.">
+        </a>
+        <figcaption id="sample-caption">
+          <span><i>The year we met</i> <span class="caption-detail">· Sample storybook</span></span>
+          <a href="/assets/the-year-we-met.pdf">Read the PDF <span aria-hidden="true">↗</span></a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="process" id="how" aria-labelledby="steps-title">
+      <div class="shell">
+        <h2 id="steps-title">How it works</h2>
+        <ol class="steps">
+          <li><h3>Start with a date.</h3><p>Pick a date card or add a moment to your storybook. A photo and a few words can take you right back.</p></li>
+          <li><h3>Ask for their side.</h3><p>Send a question in your usual chat. They reply there, and you paste their words beside yours.</p></li>
+          <li><h3>Give them the page.</h3><p>Export a PDF and send it to someone you love. They can read it on their phone without installing Dayspan.</p></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <span>© 2026 Dayspan</span>
+    <nav aria-label="Footer"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/about/">About</a><a href="mailto:iamadk@gmail.com">Support</a></nav>
+  </footer>
 </body>
 </html>
